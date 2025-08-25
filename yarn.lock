@@ -29,6 +29,15 @@
     "@types/json-schema" "^7.0.15"
     rxjs "^7.8.1"
 
+"@aws-amplify/react-native@1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/react-native/-/react-native-1.1.10.tgz#ac414f81d9a30ea5fc910192103d42b646d28d2c"
+  integrity sha512-dldYQ4jVdso9i4JlFoXV/jwz6uklYoE1YwQ0lWXXzY7t12wcb68xIkcW+HBOwR5bKDqj7v/wCJrZxCGJ764rxg==
+  dependencies:
+    base-64 "^1.0.0"
+    buffer "^6.0.3"
+    react-native-url-polyfill "^2.0.0"
+
 "@aws-crypto/crc32@3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@aws-crypto/crc32/-/crc32-3.0.0.tgz#07300eca214409c33e3ff769cd5697b57fdd38fa"
@@ -2457,6 +2466,13 @@
   dependencies:
     gud "^1.0.0"
     warning "^4.0.3"
+
+"@intelihub-app/react-native@file:packages/react-native":
+  version "1.1.10-intelihub.0"
+  dependencies:
+    base-64 "^1.0.0"
+    buffer "^6.0.3"
+    react-native-url-polyfill "^2.0.0"
 
 "@isaacs/balanced-match@^4.0.1":
   version "4.0.1"

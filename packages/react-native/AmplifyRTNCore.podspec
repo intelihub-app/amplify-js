@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "12.4" }
-  s.source       = { :git => "https://github.com/aws-amplify/amplify-js.git", :tag => "#{s.version}" }
+  s.source       = { :path => "." }
 
   s.source_files = "ios/**/*.{h,m,mm,swift,c}"
 

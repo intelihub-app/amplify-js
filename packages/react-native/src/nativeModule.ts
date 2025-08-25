@@ -6,7 +6,7 @@ import { NativeModules, Platform } from 'react-native';
 import { RTNCore } from './types';
 
 const LINKING_ERROR =
-	`The package '@aws-amplify/react-native' doesn't seem to be linked. Make sure: \n\n` +
+	`The package '@intelihub-app/react-native' (aka '@aws-amplify/react-native') doesn't seem to be linked. Make sure: \n\n` +
 	Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
 	'- You rebuilt the app after installing the package\n' +
 	'- You are not using Expo Go\n';

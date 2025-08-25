@@ -4,7 +4,7 @@
 		"rootDirs": ["src"],
 		"baseUrl": ".",
 		"paths": {
-			"@aws-amplify/react-native": ["./src/index"]
+			"@intelihub-app/react-native": ["./src/index"]
 		},
 		"jsx": "react"
 	},
