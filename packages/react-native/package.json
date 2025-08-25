@@ -1,6 +1,6 @@
 {
-	"name": "@aws-amplify/react-native",
-	"version": "1.1.10",
+	"name": "@intelihub-app/react-native",
+	"version": "1.1.10-intelihub.0",
 	"description": "React Native core module for aws-amplify",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.mjs",
@@ -8,7 +8,7 @@
 	"typings": "./dist/esm/index.d.ts",
 	"sideEffects": false,
 	"publishConfig": {
-		"access": "public"
+		"registry": "https://npm.pkg.github.com"
 	},
 	"scripts": {
 		"test": "echo 'no-op'",
@@ -21,7 +21,9 @@
 		"format": "echo \"Not implemented\"",
 		"lint": "eslint '**/*.{ts,tsx}' && npm run ts-coverage",
 		"lint:fix": "eslint '**/*.{ts,tsx}' --fix",
-		"ts-coverage": "typescript-coverage-report -p ./tsconfig.build.json -t 88.21"
+		"ts-coverage": "typescript-coverage-report -p ./tsconfig.build.json -t 88.21",
+		"prepublishOnly": "npm run build",
+		"prepack": "npm run build"
 	},
 	"dependencies": {
 		"base-64": "^1.0.0",
@@ -38,19 +40,26 @@
 		"@react-native-async-storage/async-storage": "^1.17.12",
 		"@react-native-community/netinfo": "4.7.0",
 		"@types/base-64": "1.0.0",
+		"@types/jest": "^29.5.8",
+		"@types/node": "^8.9.5",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"rimraf": "^2.6.2",
+		"rollup": "^4.9.6",
+		"typescript": "^5.3.0",
 		"react-native": "0.72.17",
 		"react-native-get-random-values": "1.9.0"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/aws-amplify/amplify-js.git"
+		"url": "https://github.com/intelihub-app/amplify-js.git",
+		"directory": "packages/react-native"
 	},
 	"author": "Amazon Web Services",
 	"license": "Apache-2.0",
 	"bugs": {
-		"url": "https://github.com/aws-amplify/amplify-js/issues"
+		"url": "https://github.com/intelihub-app/amplify-js/issues"
 	},
-	"homepage": "https://docs.amplify.aws/",
+	"homepage": "https://github.com/intelihub-app/amplify-js#readme",
 	"files": [
 		"Amplify*.podspec",
 		"android",

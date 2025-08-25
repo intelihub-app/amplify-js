@@ -11,7 +11,7 @@ import {
 	esmTSOptions,
 } from '../../rollup/common.mjs';
 
-const input = getInputForGlob('src/**/*.ts');
+const input = getInputForGlob('src/**/*.{ts,tsx}', { ignore: ['src/**/*.d.ts'] });
 
 const config = defineConfig([
 	// CJS config

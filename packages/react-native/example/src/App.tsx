@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import { computeModPow, computeS } from '@aws-amplify/react-native';
+import { computeModPow, computeS } from '@intelihub-app/react-native';
 
 const computeModPowPayload = {
 	base: '1259834344',
